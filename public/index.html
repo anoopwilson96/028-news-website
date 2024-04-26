@@ -3,13 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="style.css">
   <title>Your News</title>
 </head>
-<body class="">
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-  
+<body>
+  <header class=" bg-stone-100">
+    <section class=" headerOne mt-3 bg-stone-100 flex flex-row align-middle justify-center">
+      <img src="./logo.png" alt="logo">
+
+    </section>
+    <section class="headerTwo p-4  flex flex-row align-middle justify-evenly bg-stone-100">
+      <nav>
+        <ul class="flex flex-row align-middle justify-around gap-10 text-wrap text-lg">
+          <li>India</li>
+          <li>World</li>
+          <li class="hidden sm:block md:block">Sports</li>
+          <li class="hidden sm:block md:block">IT</li>
+          <li class="hidden sm:block md:block">Entertainments</li>
+         </ul>
+      </nav>
+      <div class="searchHeader flex align-middle  justify-center gap-2">
+        <input class=" border border-double border-zinc-300 p-2 rounded-full" type="text" placeholder="search">
+        <button type="submit"><span class=" rounded-none border-none border-zinc-300 searchIcon material-symbols-outlined"> search </span></button>
+        
+      </div>
+    </section>
+
+  </header>
+
+
 </body>
 </html>

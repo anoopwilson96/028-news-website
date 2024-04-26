@@ -554,22 +554,131 @@ video {
   --tw-contain-style:  ;
 }
 
-.bg-orange-400 {
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.text-wrap {
+  text-wrap: wrap;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-none {
+  border-radius: 0px;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-double {
+  border-style: double;
+}
+
+.border-none {
+  border-style: none;
+}
+
+.border-zinc-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(212 212 216 / var(--tw-border-opacity));
+}
+
+.bg-stone-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(251 146 60 / var(--tw-bg-opacity));
+  background-color: rgb(245 245 244 / var(--tw-bg-opacity));
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.p-2 {
+  padding: 0.5rem;
 }
 
-.font-bold {
-  font-weight: 700;
+.p-4 {
+  padding: 1rem;
 }
 
-.underline {
-  text-decoration-line: underline;
+.align-middle {
+  vertical-align: middle;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+/* Below are Vanilla CSS used */
+
+/* Below are Vanilla CSS used */
+
+/* Below are Vanilla CSS used */
+
+/* Below are Vanilla CSS used */
+
+.headerOne img{
+  width: 200px;
+  height: 50px;
+}
+
+.searchIcon{
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+  .headerOne img{
+    width: 250px;
+    height: 65px;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:block {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
 }
 
 
