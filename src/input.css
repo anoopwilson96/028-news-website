@@ -1,0 +1,32 @@
+/* Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Other styles */
+.headerOne img {
+  width: 200px;
+  height: 50px;
+}
+
+
+/* Media queries (potentially where the error lies) */
+@media (min-width: 320px) and (max-width: 575px) {
+  /* Styles for small screens */
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .headerOne img {
+    width: 250px;
+    height: 65px;
+  }
+}
+
+/* More media queries... */
