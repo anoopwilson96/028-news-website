@@ -7,7 +7,7 @@ const blogContainer = document.getElementById('blog-container')
 // fetchRandomNews () will fetch api and apiUrl define my unique api key + api link for random newses
 async function fetchRandomNews () {
   try { 
-      const apiUrl = 'https://newsapi.org/v2/top-headlines?country=in&pageSize=15&apiKey=${apiKey}' 
+    const apiUrl = `https://newsapi.org/v2/top-headlines?country=in&pageSize=15&apiKey=${apiKey}`;
     // pageSize=15 is parameter to control total number of news is fetched
 
       const response = await fetch(apiUrl)
@@ -21,16 +21,32 @@ async function fetchRandomNews () {
   }
 }
 
-// from above received api data, we will update HTML using DOM
-//
+// displayBlogs() will fill data(articles) from api[fetchRandomNews ()] to the HTML. Just like map=> method in React.
+// thus from above received api data from fetchRandomNews () ,  will be updated in HTML using DOM
 
 function displayBlogs(articles){
-  blogContainer.innerHTML = " "
-  
+
+  blogContainer.innerHTML = " ";  // to clear if there is any existing data
+  // foreach will do the loop like map=> in react
+  articles.forEach(article => {
+    const blogCard = document.createElement('div')
+    blogCard.classList.add('blog-card') 
+    const img = document.createElement('img')
+    img.src = article.urlToImage || './dummy image.png'; // Default image if no URL from API
+    img.alt = article.title
+    const title = document.createElement('h2')
+    title.textContent = article.title
+    const description = document.createElement('h3')
+    description.textContent = article.description
+
+
+ blogCard.appendChild(img)
+ blogCard.appendChild(title)
+ blogCard.appendChild(description)
+ blogContainer.appendChild(blogCard)
+    
+  });
 }
-
-
-
 
 
 
@@ -47,5 +63,8 @@ function displayBlogs(articles){
     
   }
 } )
+
+();
+
 
 
