@@ -1,15 +1,12 @@
-
-
-<!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
-
 <!DOCTYPE html>
+<!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link href="./src/output.css" rel="stylesheet">
   <title>Your News</title>
 </head>
@@ -22,11 +19,11 @@
     <section class="headerTwo p-4  flex flex-row align-middle justify-evenly bg-stone-100">
       <nav>
         <ul class="flex flex-row align-middle justify-around gap-10 text-wrap text-lg">
-          <li class="hidden sm:block"  > India</li>
+          <li class="hidden sm:block"  >India</li>
           <li class="hidden sm:block"  > World</li>
           <li class="hidden sm:block md:block">Sports</li>
-          <li class="hidden sm:block md:block">IT</li>
-          <li class="hidden sm:block md:block">Entertainments</li>
+          <li class="hidden sm:block md:block">Tech</li>
+          <li class="hidden sm:block md:block">Movies</li>
          </ul>
       </nav>
       <div class="searchHeader flex align-middle  justify-center gap-2">
@@ -34,10 +31,11 @@
         <button type="submit"><span class=" rounded-none border-none border-zinc-300 searchIcon material-symbols-outlined"> search </span></button>
         
       </div>
-    </section>
+    </section> 
   </header>
   <main>
-<div class="sectionOne flex flex-row align-middle  justify-center">    <h1 class="animate-pulse mt-2 mainHeading  font-mono text-2xl font-bold">
+<div class="sectionOne flex flex-row align-middle  justify-center">    
+  <h1 class="animate-pulse mt-2 mainHeading  font-mono text-2xl font-bold">
   Hot news at your fingertip
 </h1></div>
 
@@ -45,7 +43,7 @@
 
 </div>
 
-<div class=" container lg:container justify-items-center m-auto sectionThree  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1">
+<div  id="blog-container" class=" container lg:container justify-items-center m-auto sectionThree  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1">
 
 
   <article class="  max-w-64 m-5 cursor-pointer p-3 border rounded-md border-slate-400  flex flex-col justify-between align-middle">
@@ -168,6 +166,6 @@
 
     
   </main>
-<script src="./script.js" ></script>
+<script type="module" src="./index.js"></script>
 </body>
 </html>
