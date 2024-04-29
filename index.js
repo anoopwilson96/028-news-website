@@ -35,15 +35,22 @@ function displayBlogs(articles){
     img.src = article.urlToImage || './dummy image.png'; // Default image if no URL from API
     img.alt = article.title
     const title = document.createElement('h2')
-    title.textContent = article.title
+    const truncatedTitle =
+    article.title.length >30
+    ? article.title.slice(0,30) + "  ...." 
+    : article.title
+    title.textContent = truncatedTitle;
     const description = document.createElement('h3')
     description.textContent = article.description
+    const button = document.createElement('button')
+    button.innerText= "Read more"
 
 // final code to append 
 
  blogCard.appendChild(img)
  blogCard.appendChild(title)
  blogCard.appendChild(description)
+ blogCard.appendChild(button)
  blogContainer.appendChild(blogCard)
     
   });
