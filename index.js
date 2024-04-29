@@ -7,7 +7,7 @@ const blogContainer = document.getElementById('blog-container')
 // fetchRandomNews () will fetch api and apiUrl define my unique api key + api link for random newses
 async function fetchRandomNews () {
   try { 
-    const apiUrl = `https.//newsapi.org/v2/top-headlines?country=in&pageSize=15&apiKey=${apiKey}`;
+    const apiUrl = `http://newsapi.org/v2/top-headlines?country=in&pageSize=15&apiKey=${apiKey}`;
     // pageSize=15 is parameter to control total number of news is fetched
 
       const response = await fetch(apiUrl)
