@@ -39,6 +39,7 @@ function displayBlogs(articles){
     const description = document.createElement('h3')
     description.textContent = article.description
 
+// final code to append 
 
  blogCard.appendChild(img)
  blogCard.appendChild(title)
@@ -63,7 +64,7 @@ function displayBlogs(articles){
     
   }
 } )
-
+// calling bracket function and because of that all the above functions are called.
 ();
 
 
