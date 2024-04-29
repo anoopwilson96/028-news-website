@@ -8,6 +8,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="./src/output.css" rel="stylesheet">
   <title>Your News</title>
 </head>
@@ -107,28 +109,61 @@
 </article>
 </div>
 
-<footer>
-  <div>
-    <div class="footerOne">
-      <ul>
-        <li>Explained  news</li>
-        <li>Last hour news</li>
-        <li>Government updates</li>
-        <li>World news</li>
+
+
+<footer class=" bg-stone-300 pt-10 mt-10 ">
+
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3  ">
+
+
+    <div class="footerOne ">
+      <ul class=" flex flex-col align-middle items-center justify-start gap-2">
+        <li class="hover:text-yellow-500 text-lg "> Explained news</li>
+        <li class="hover:text-yellow-500 text-lg "> Last hour news</li>
+        <li class="hover:text-yellow-500 text-lg "> Government updates</li>
+        <li class="hover:text-yellow-500 text-lg mb-5 "> World news</li>
       </ul>
 
     </div>
     <div class="footrtTwo">
-      
+      <div class="flex flex-col align-middle items-center justify-start gap-2">  <div class="flex flex-col align-middle items-center justify-start gap-2 ">
+          <h3 class="mb-3 text-2xl font-mono">Get your daily newsletter</h3>
+          <input placeholder="Your Email address" class=" border border-double border-zinc-300 p-2 rounded-full" type="email" name="" id="">
+          <button class=" mb-5 px-3 rounded-full border bg-yellow-500 border-zinc-300 hover:bg-slate-100 "
+                 type="submit">Subscribe</button>
+        </div>
 
+
+        <div class="mb-5">
+          <h3 class="font-mono">Talk to Us</h3>
+          <div class=" flex gap-3">
+            <i class="fa-regular fa-envelope text-4xl"></i>
+            <i class="fa-solid fa-phone text-3xl"></i>
+          </div>
+        </div>
+
+
+      </div>
     </div>
+
     <div class="footerThree">
+      <ul class="flex flex-col align-middle items-center justify-start gap-2">
+        <li class="hover:text-yellow-500 text-lg "> Subscription</li>
+        <li class="hover:text-yellow-500 text-lg "> News letter</li>
+        <li class="hover:text-yellow-500 text-lg "> Hiring</li>
+        <li class="hover:text-yellow-500 text-lg "> contact us</li>
+      </ul>
+
 
     </div>
+
+
+
   </div>
 
 
 </footer>
+
 
 
     
