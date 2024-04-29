@@ -1,5 +1,3 @@
-const apiKey= '28689f32d483407482232e6770fb33ee'
-// my unique key from news api.org
 
 const blogContainer = document.getElementById('blog-container')
 // imported div where news articles are supposed to publish
@@ -7,7 +5,8 @@ const blogContainer = document.getElementById('blog-container')
 // fetchRandomNews () will fetch api and apiUrl define my unique api key + api link for random newses
 async function fetchRandomNews () {
   try { 
-    const apiUrl = `https://newsapi.org/v2/top-headlines?country=in&pageSize=15&apiKey=${apiKey}`;
+    const apiUrl = `https://gnews.io/api/v4/search?q=example&lang=en&country=in&max=10&apikey=d26219d1018fb73d35b512a9cdc0ab7a`;
+  
     // pageSize=15 is parameter to control total number of news is fetched
 
       const response = await fetch(apiUrl)
@@ -32,12 +31,12 @@ function displayBlogs(articles){
     const blogCard = document.createElement('div')
     blogCard.classList.add('blog-card') 
     const img = document.createElement('img')
-    img.src = article.urlToImage || './dummy image.png'; // Default image if no URL from API
+    img.src = article.image || './dummy image.png'; // Default image if no URL from API
     img.alt = article.title
     const title = document.createElement('h2')
     const truncatedTitle =
     article.title.length >30
-    ? article.title.slice(0,30) + "  ...." 
+    ? article.title.slice(0,40) + "  ...." 
     : article.title
     title.textContent = truncatedTitle;
     const description = document.createElement('h3')
