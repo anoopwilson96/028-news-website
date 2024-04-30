@@ -3,9 +3,10 @@ const blogContainer = document.getElementById('blog-container')
 // imported div where news articles are supposed to publish
 
 // fetchRandomNews () will fetch api and apiUrl define my unique api key + api link for random newses
+// apiKey1 = d26219d1018fb73d35b512a9cdc0ab7a  apiKey2 = 63635babfcffd0b0261f8cb2b1078180
 async function fetchRandomNews () {
   try { 
-    const apiUrl = `https://gnews.io/api/v4/search?q=example&lang=en&country=in&max=10&apikey=d26219d1018fb73d35b512a9cdc0ab7a`;
+    const apiUrl = `https://gnews.io/api/v4/search?q=example&lang=en&country=in&max=10&apikey=63635babfcffd0b0261f8cb2b1078180`;
   
     // max=10 is parameter to control total number of news is fetched
 
