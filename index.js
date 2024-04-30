@@ -52,11 +52,6 @@ function displayBlogs(articles){
  blogCard.appendChild(button)
  blogContainer.appendChild(blogCard)
 
-    //add an event listener to open news
-
- blogCard.addEventListener("click",()=> { 
-   window.open(article.url, "_blank")});
-    
   });
 }
 
