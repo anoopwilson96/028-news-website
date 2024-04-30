@@ -55,7 +55,7 @@ function displayBlogs(articles){
     //add an event listener to open news
 
  blogCard.addEventListener("click",()=> { 
-   window.open(article.url, "_blank")}
+   window.open(article.url, "_blank")});
     
   });
 }
