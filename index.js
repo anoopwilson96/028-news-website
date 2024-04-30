@@ -7,7 +7,7 @@ async function fetchRandomNews () {
   try { 
     const apiUrl = `https://gnews.io/api/v4/search?q=example&lang=en&country=in&max=10&apikey=d26219d1018fb73d35b512a9cdc0ab7a`;
   
-    // pageSize=15 is parameter to control total number of news is fetched
+    // max=10 is parameter to control total number of news is fetched
 
       const response = await fetch(apiUrl)
       const data = await response.json() 
@@ -58,7 +58,7 @@ function displayBlogs(articles){
 
 
 
-// this sync bracket function will call fetchRandomNews () and displayBlogs(). 
+//This sync bracket function will call fetchRandomNews () and displayBlogs(). 
 
 (async  ()=> {
   try {
@@ -70,7 +70,7 @@ function displayBlogs(articles){
     
   }
 } )
-// calling bracket function and because of that all the above functions are called.
+// Calling bracket function and because of that all the above functions are called.
 ();
 
 
