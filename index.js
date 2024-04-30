@@ -51,6 +51,10 @@ function displayBlogs(articles){
  blogCard.appendChild(description)
  blogCard.appendChild(button)
  blogContainer.appendChild(blogCard)
+ button.addEventListener('click',()=>{
+ window.open(article.url, "_blank")
+
+ })
 
   });
 }
